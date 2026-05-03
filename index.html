@@ -3,135 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DYNAGO : LE ROBIN DES BOIS AFRICAIN</title>
+    <title>Dynago : Le Robin des Bois Africain</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4ece1;
-            color: #3e2723;
-            line-height: 1.6;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 40px auto;
-            background: #ffffff;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            border-top: 10px solid #8d6e63;
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #d7ccc8;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
-            color: #5d4037;
-            font-size: 2.5em;
-            margin: 0;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            color: #fbbf24;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
         }
 
-        .subtitle {
-            font-style: italic;
-            color: #795548;
-            font-size: 1.2em;
-        }
-
-        .author-info {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #5d4037;
-        }
-
-        section {
-            margin-bottom: 30px;
+        .author {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
         }
 
         h2 {
-            color: #a1887f;
-            border-left: 5px solid #8d6e63;
-            padding-left: 15px;
-            font-size: 1.5em;
+            color: #fbbf24;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #fbbf24;
+            display: inline-block;
+            margin-top: 30px;
+            padding-bottom: 5px;
+        }
+
+        .highlight {
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .next-part {
+            background: #334155;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #fbbf24;
+            font-style: italic;
             margin-top: 40px;
-        }
-
-        p {
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-
-        .dropcap::first-letter {
-            float: left;
-            font-size: 3.5em;
-            font-weight: bold;
-            line-height: 0.8;
-            margin: 0.1em 0.1em 0 0;
-            color: #5d4037;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #9e9e9e;
-            margin-top: 50px;
-            border-top: 1px solid #eeeeee;
-            padding-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-            h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>DYNAGO</h1>
-        <div class="subtitle">Le Robin des Bois Africain</div>
-        <div class="author-info">Écrit par Mademba, né le 8 mars 2009</div>
-    </header>
+    <div class="container">
+        <h1>Dynago : Le Robin des Bois Africain</h1>
+        <p class="author">Par Mademba</p>
 
-    <section>
-        <h2>Chapitre 1 : L’Enfant de la Forêt</h2>
-        <p class="dropcap">Dans un Sénégal ancien, où les royaumes étaient régis par l'honneur, vivait un adolescent nommé Dynago. À 16 ans, sa vie n'était que douleur : il n'avait jamais connu sa mère et son père, brisé par la vie, s'était noyé dans l'alcool.</p>
-        <p>Seul et rejeté, Dynago s'exila dans la forêt profonde. Pendant deux ans, il vécut parmi les singes. Il apprit leur agilité, apprenant à grimper aux baobabs les plus hauts en quelques secondes. Il devint un maître dans la fabrication d'armes artisanales, sculptant des arcs dans le bois de teck et des flèches dans le bambou. À 18 ans, Dynago n'était plus un enfant, il était devenu une force de la nature.</p>
-    </section>
+        <h2>Chapitre 1 : Le Secret du Guerrier</h2>
+        <p>
+            Dynago grandissait avec un idéal de justice, mais dans l'ombre de son courage brûlait un secret : 
+            il était <span class="highlight">fou amoureux de Soundja</span>. Ce sentiment, il l'avait gardé enfoui au plus profond de lui pendant tout ce temps. 
+            C'était cette flamme silencieuse qui lui donnait la force d'affronter les pires épreuves, avec l'espoir qu'un jour, 
+            il serait digne de lui avouer la vérité.
+        </p>
 
-    <section>
-        <h2>Chapitre 2 : L'Amertume de l'Échec</h2>
-        <p>Dynago revint dans son village natal avec un rêve de justice. Le pays était sous la coupe de Sangomar, un dirigeant cruel qui imposait des taxes étouffantes et saisissait les champs des paysans.</p>
-        <p>Sa première mission fut un désastre. En tentant d'empêcher les gardes de Sangomar de prendre possession des terres, Dynago, trop impulsif, fut rapidement encerclé. Il ne dut son salut qu'à une fuite humiliante vers les arbres. Dans le village, les moqueries fusèrent : « Comment un gamin de 18 ans pourrait-il nous sauver ? » Les villageois, désespérés, commencèrent à préparer leurs bagages pour l'exode.</p>
-    </section>
+        <h2>Chapitre 2 : La Chute et les Retrouvailles</h2>
+        <p>
+            Revenu dans son village, Dynago tenta de s'opposer à la tyrannie naissante. Mais l'ennemi était plus fort que prévu. 
+            Battu et humilié lors de son premier grand combat, il dut battre en retraite, l'âme blessée. 
+            C’est alors qu'il croisa de nouveau le chemin de <span class="highlight">Soundja</span>. Elle n'était plus la jeune fille d'autrefois. 
+            Devenue une femme forte et résolue, elle allait devenir le pilier de sa reconstruction.
+        </p>
 
-    <section>
-        <h2>Chapitre 3 : La Rencontre de Soundja</h2>
-        <p>Alors qu'il marchait vers l'abandon, le cœur lourd, une jeune femme nommée Soundja l'arrêta. « J'ai vu ton courage, Dynago. La force sans la technique n'est qu'un vent qui s'épuise », lui dit-elle. Elle le mena vers son oncle, Basse, une légende vivante des arts martiaux qui vivait en ermite.</p>
-        <p>Basse était un homme strict. Au début, il refusa d'enseigner ses secrets à ce garçon qu'il jugeait trop instable. Sous l'insistance de Soundja, il accepta que Dynago reste trois jours. Lors d'une séance de méditation cruciale, Dynago perdit sa concentration dès que Soundja apparut. Basse trancha : « Tu n'es pas prêt. Ton esprit est comme une eau troublée. »</p>
-    </section>
-
-    <section>
-        <h2>Chapitre 4 : La Maîtrise du Soi</h2>
-        <p>Piqué au vif, Dynago ne partit pas. Il passa des nuits entières immobile sous la pluie pour prouver sa patience. Admiratif, Basse finit par lui enseigner la maîtrise du souffle et l'art de la précision. Dynago apprit à ne plus seulement frapper, mais à anticiper les mouvements de l'adversaire.</p>
-        <p>Pendant ce temps, au village, la tyrannie de Sangomar atteignait son sommet. Les réserves de nourriture étaient pillées par ses soldats. L'heure de la rébellion avait sonné.</p>
-    </section>
-
-    <footer>
-        © 2026 - Projet Dynago - Tous droits réservés
-    </footer>
-</div>
+        <div class="next-part">
+            <strong>À suivre dans la Partie 2...</strong><br>
+            Le combat contre Sangomar approche. Dynago retournera-t-il voir le vieux Basse pour devenir plus fort ? 
+            L'aveu final de Dynago à Soundja aura-t-il lieu ? Le suspense est à son comble !
+        </div>
+    </div>
 
 </body>
 </html>
