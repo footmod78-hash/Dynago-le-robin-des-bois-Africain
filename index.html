@@ -3,95 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynago : Le Robin des Bois Africain</title>
+    <title>DYNAGO : LE ROBIN DES BOIS AFRICAIN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
-
         body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            font-family: 'Poppins', sans-serif;
+            /* Police principale : Lora (sérif) pour le côté récit/légende */
+            font-family: 'Lora', serif;
+            /* Couleurs : Fond sable très clair, texte brun très foncé */
+            background-color: #fdf8f1;
+            color: #2d1b14;
             line-height: 1.8;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
         .container {
-            max-width: 700px;
+            max-width: 800px;
             margin: 40px auto;
-            background: #1e293b;
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            background: #ffffff;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(62, 39, 35, 0.1);
+            border-radius: 4px;
+            /* Bordure supérieure en Ocre Brûlé */
+            border-top: 12px solid #b7410e;
         }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            color: #fbbf24;
+        header {
             text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 5px;
-        }
-
-        .author {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #94a3b8;
+            border-bottom: 1px solid #e0d4c3;
+            padding-bottom: 30px;
             margin-bottom: 40px;
         }
 
+        h1 {
+            /* Police Titre : Montserrat (sans-sérif) pour la force */
+            font-family: 'Montserrat', sans-serif;
+            color: #b7410e; /* Couleur Terre de Sienne */
+            font-size: 3.5em;
+            margin: 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            color: #8d6e63;
+            font-size: 1em;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        .author-info {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #5d4037;
+            text-transform: uppercase;
+        }
+
         h2 {
-            color: #fbbf24;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #fbbf24;
+            font-family: 'Montserrat', sans-serif;
+            color: #3e2723;
+            border-bottom: 3px solid #ffab40; /* Souligné orange vif */
             display: inline-block;
-            margin-top: 30px;
             padding-bottom: 5px;
-        }
-
-        .highlight {
-            color: #fbbf24;
-            font-weight: 600;
-        }
-
-        .next-part {
-            background: #334155;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #fbbf24;
-            font-style: italic;
+            font-size: 1.4em;
             margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .dropcap::first-letter {
+            float: left;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4em;
+            font-weight: 900;
+            line-height: 0.8;
+            margin: 0.1em 0.15em 0 0;
+            color: #b7410e;
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8em;
+            color: #a1887f;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Effet de sélection de texte personnalisé */
+        ::selection {
+            background: #ffab40;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 25px;
+            }
+            h1 { font-size: 2.2em; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Dynago : Le Robin des Bois Africain</h1>
-        <p class="author">Par Mademba</p>
+<div class="container">
+    <header>
+        <h1>DYNAGO</h1>
+        <div class="subtitle">Le Robin des Bois Africain</div>
+        <div class="author-info">Par Mademba — Mai 2026</div>
+    </header>
 
-        <h2>Chapitre 1 : Le Secret du Guerrier</h2>
-        <p>
-            Dynago grandissait avec un idéal de justice, mais dans l'ombre de son courage brûlait un secret : 
-            il était <span class="highlight">fou amoureux de Soundja</span>. Ce sentiment, il l'avait gardé enfoui au plus profond de lui pendant tout ce temps. 
-            C'était cette flamme silencieuse qui lui donnait la force d'affronter les pires épreuves, avec l'espoir qu'un jour, 
-            il serait digne de lui avouer la vérité.
-        </p>
+    <section>
+        <h2>Chapitre 1 : L’Enfant de la Forêt</h2>
+        <p class="dropcap">Dans un Sénégal ancien, où les royaumes étaient régis par l'honneur, vivait un adolescent nommé Dynago. À 16 ans, sa vie n'était que douleur : il n'avait jamais connu sa mère et son père, brisé par la vie, s'était noyé dans l'alcool.</p>
+        <p>Seul et rejeté, Dynago s'exila dans la forêt profonde. Pendant deux ans, il vécut parmi les singes. Il apprit leur agilité, apprenant à grimper aux baobabs les plus hauts en quelques secondes. Il devint un maître dans la fabrication d'armes artisanales, sculptant des arcs dans le bois de teck et des flèches dans le bambou.</p>
+    </section>
 
-        <h2>Chapitre 2 : La Chute et les Retrouvailles</h2>
-        <p>
-            Revenu dans son village, Dynago tenta de s'opposer à la tyrannie naissante. Mais l'ennemi était plus fort que prévu. 
-            Battu et humilié lors de son premier grand combat, il dut battre en retraite, l'âme blessée. 
-            C’est alors qu'il croisa de nouveau le chemin de <span class="highlight">Soundja</span>. Elle n'était plus la jeune fille d'autrefois. 
-            Devenue une femme forte et résolue, elle allait devenir le pilier de sa reconstruction.
-        </p>
+    <section>
+        <h2>Chapitre 2 : L'Amertume de l'Échec</h2>
+        <p>Dynago revint dans son village natal avec un rêve de justice. Le pays était sous la coupe de Sangomar, un dirigeant cruel qui imposait des taxes étouffantes et saisissait les champs des paysans.</p>
+        <p>Sa première mission fut un désastre. En tentant d'empêcher les gardes de Sangomar de prendre possession des terres, Dynago, trop impulsif, fut rapidement encerclé. Il ne dut son salut qu'à une fuite humiliante vers les arbres.</p>
+    </section>
 
-        <div class="next-part">
-            <strong>À suivre dans la Partie 2...</strong><br>
-            Le combat contre Sangomar approche. Dynago retournera-t-il voir le vieux Basse pour devenir plus fort ? 
-            L'aveu final de Dynago à Soundja aura-t-il lieu ? Le suspense est à son comble !
-        </div>
-    </div>
+    <footer>
+        © 2026 - PROJET DYNAGO - Tous droits réservés
+    </footer>
+</div>
 
 </body>
 </html>
