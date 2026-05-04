@@ -7,9 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* Arrière-plan en violet */
             background-color: #4B0082; 
-            /* Écritures en blanc */
             color: #ffffff; 
             line-height: 1.6;
             margin: 0;
@@ -18,7 +16,6 @@
         .container {
             max-width: 800px;
             margin: 40px auto;
-            /* Le conteneur reste dans le thème violet pour l'harmonie */
             background: #4B0082; 
             padding: 40px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -122,5 +119,19 @@
             <p>Écrit par Mademba, né le 8 mars 2009 à Dakar.</p>
         </footer>
     </div>
+
+    <script>
+        window.onload = function() {
+            alert("Bienvenue dans la légende de Dynago ! Réponds à ces 3 questions pour entrer dans le village.");
+            
+            let q1 = prompt("Question 1 : Préfères-tu la force brute ou la ruse pour combattre l'injustice ?");
+            let q2 = prompt("Question 2 : Si tu étais Dynago, aurais-tu le courage de vivre 2 ans dans la forêt ? (Oui/Non)");
+            let q3 = prompt("Question 3 : Quel est ton nom, jeune guerrier ?");
+            
+            if (q3) {
+                alert("Salutations " + q3 + " ! Prépare-toi à découvrir l'histoire du Robin des Bois Africain.");
+            }
+        };
+    </script>
 </body>
 </html>
